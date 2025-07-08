@@ -1,0 +1,12 @@
+function getWeather() {
+  const city = document.getElementById("cityInput").value;
+  const weatherBox = document.getElementById("weatherResult");
+
+  if (!city) {
+    weatherBox.innerHTML = "Please enter a city.";
+    return;
+  }
+
+  // Demo content without real API
+  weatherBox.innerHTML = `Weather in <b>${city}</b>: Sunny, 28°C ☀️`;
+}
